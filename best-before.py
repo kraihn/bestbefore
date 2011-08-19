@@ -11,10 +11,14 @@ def main():
 
 def interpret(arg):
 	input = arg.split('/')
-	print input[0]
-	print input[1]
-	print input[2]
-	print arg + ' ' + str(len(arg))
+	if len(input) != 3:
+		print arg + ' is illegal'
+	
+	else:
+		print input[0]
+		print input[1]
+		print input[2]
+		print arg + ' ' + str(len(arg))
 	
 
 if __name__ == '__main__':
